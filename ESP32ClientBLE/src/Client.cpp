@@ -7,6 +7,7 @@
 
 #include "BLEDevice.h"
 #include <Arduino.h>
+#include <string>
 
 //#include "BLEScan.h"
 
@@ -15,6 +16,8 @@
 static BLEUUID serviceUUID("4fafc201-1fb5-459e-8fcc-c5c9c331914b");
 static BLEUUID    charUUID_1("beb5483e-36e1-4688-b7f5-ea07361b26a8");
 static BLEUUID    charUUID_2("1c95d5e3-d8f7-413a-bf3d-7a2e5d7be87e");
+static BLEUUID    charUUID_3("80f4d270-900e-40c6-81cd-9b83908c80be");
+static BLEUUID    charUUID_4("98bbcb3c-f91e-4a77-9b21-99302b4fccfe");
 
 // Some variables to keep track on device connected
 static boolean doConnect = false;
@@ -25,12 +28,22 @@ static boolean doScan = false;
 static BLEAdvertisedDevice* myDevice;
 BLERemoteCharacteristic* pRemoteChar_1;
 BLERemoteCharacteristic* pRemoteChar_2;
+BLERemoteCharacteristic* pRemoteChar_3;
+BLERemoteCharacteristic* pRemoteChar_4;
 
-#define MTR2_OUT GPIO_NUM_22
 #define MTR1_OUT GPIO_NUM_23
+#define MTR2_OUT GPIO_NUM_22
+#define MTR3_OUT GPIO_NUM_21
+#define MTR4_OUT GPIO_NUM_19
+#define MTR5_OUT GPIO_NUM_18
 
-int Mtr2DutyCycle = 0;
+
 int Mtr1DutyCycle = 0;
+int Mtr2DutyCycle = 0;
+int Mtr3DutyCycle = 0;
+int Mtr4DutyCycle = 0;
+int Mtr5DutyCycle = 0;
+
 
 // Callback function for Notify function
 static void notifyCallback(BLERemoteCharacteristic* pBLERemoteCharacteristic,
@@ -104,11 +117,18 @@ bool connectToServer() {
 
   connected = true;
   pRemoteChar_1 = pRemoteService->getCharacteristic(charUUID_1);
-  pRemoteChar_2 = pRemoteService->getCharacteristic(charUUID_2);
+  // pRemoteChar_2 = pRemoteService->getCharacteristic(charUUID_2);
+  // pRemoteChar_3 = pRemoteService->getCharacteristic(charUUID_3);
+  // pRemoteChar_4 = pRemoteService->getCharacteristic(charUUID_4);
+
   if(connectCharacteristic(pRemoteService, pRemoteChar_1) == false)
     connected = false;
-  else if(connectCharacteristic(pRemoteService, pRemoteChar_2) == false)
-    connected = false;
+  // else if(connectCharacteristic(pRemoteService, pRemoteChar_2) == false)
+  //   connected = false;
+  // else if(connectCharacteristic(pRemoteService, pRemoteChar_3) == false)
+  //   connected = false;
+  // else if(connectCharacteristic(pRemoteService, pRemoteChar_4) == false)
+  //   connected = false;
 
   if(connected == false) {
     pClient-> disconnect();
@@ -137,6 +157,8 @@ class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
     } // Found our server
   } // onResult
 }; // MyAdvertisedDeviceCallbacks
+
+
 
 void setup() {
   Serial.begin(115200);
@@ -176,21 +198,111 @@ void loop() {
     // Receive characteristic from server
     std::string rxValue1 = pRemoteChar_1->readValue();
     Serial.print("Characteristic 1 (readValue): ");
-    Serial.println(rxValue1.c_str());
-  
+    //Serial.println(rxValue1.c_str());
+
     // Convert the recieved value to int for the motor input to analogWrite
     Mtr1DutyCycle = std::atoi(rxValue1.c_str());
-    analogWrite(MTR1_OUT, Mtr1DutyCycle);
 
-    // Receive characteristic from server
-    std::string rxValue2 = pRemoteChar_2->readValue();
-    Serial.print("Characteristic 2 (readValue): ");
-    Serial.println(rxValue2.c_str());
+    // Split the string by delimiter
+    char* token = strtok((char*)rxValue1.c_str(), "%");
+    int MtrNum = 1;
+    while (token != NULL) {
+      //Serial.println(token);
+      // Serial.print("token:  ");
+      // Serial.println(token);
+      // if (MtrNum == 1){
+      //   Mtr1DutyCycle = int(token);
+      //   Serial.print("Mtr1DutyCycle int:  ");
+      //   Serial.println(token);
+      //   Serial.print("Mtr Number  ");
+      //   Serial.println(MtrNum);
+
+      //   analogWrite(MTR1_OUT, Mtr1DutyCycle);
+
+      // }
+      // else if (MtrNum == 2){
+      //   Mtr1DutyCycle = int(token);
+      //   Serial.print("Mtr2DutyCycle int:  ");
+      //   Serial.println(token);
+      //   Serial.print("Mtr Number  ");
+      //   Serial.println(MtrNum);
+
+      //   //analogWrite(MTR1_OUT, Mtr1DutyCycle);
+
+      // }
+
+        Serial.print(token);
+
+      if (MtrNum == 1){
+        Mtr1DutyCycle = atoi(token);
+        Serial.println(Mtr1DutyCycle);
+        analogWrite(MTR1_OUT, Mtr1DutyCycle);
+
+
+      }
+      if (MtrNum == 2){
+        Mtr2DutyCycle = atoi(token);
+        Serial.println(Mtr2DutyCycle);
+        analogWrite(MTR2_OUT, Mtr2DutyCycle);
+
+
+      }
+            if (MtrNum == 3){
+        Mtr3DutyCycle = atoi(token);
+        Serial.println(Mtr3DutyCycle);
+        analogWrite(MTR3_OUT, Mtr3DutyCycle);
+
+
+      }
+
+            if (MtrNum == 4){
+        Mtr4DutyCycle = atoi(token);
+        Serial.println(Mtr4DutyCycle);
+        analogWrite(MTR4_OUT, Mtr4DutyCycle);
+
+
+      }
+
+            if (MtrNum == 5){
+        Mtr5DutyCycle = atoi(token);
+        Serial.println(Mtr5DutyCycle);
+        analogWrite(MTR5_OUT, Mtr5DutyCycle);
+
+
+      }
+      token = strtok(NULL, "%");
+
+      MtrNum++;
+
+    }
+    // analogWrite(MTR1_OUT, Mtr1DutyCycle);
+
+    // // Receive characteristic from server
+    // std::string rxValue2 = pRemoteChar_2->readValue();
+    // Serial.print("Characteristic 2 (readValue): ");
+    // Serial.println(rxValue2.c_str());
   
-    // Convert the recieved value to int for the motor input to analogWrite
-    Mtr2DutyCycle = std::atoi(rxValue2.c_str());
-    analogWrite(MTR2_OUT, Mtr2DutyCycle);
+    // // Convert the recieved value to int for the motor input to analogWrite
+    // Mtr2DutyCycle = std::atoi(rxValue2.c_str());
+    // analogWrite(MTR2_OUT, Mtr2DutyCycle);
 
+    // // Receive characteristic from server
+    // std::string rxValue3 = pRemoteChar_3->readValue();
+    // Serial.print("Characteristic 3 (readValue): ");
+    // Serial.println(rxValue3.c_str());
+  
+    // // Convert the recieved value to int for the motor input to analogWrite
+    // Mtr3DutyCycle = std::atoi(rxValue3.c_str());
+    // analogWrite(MTR3_OUT, Mtr3DutyCycle);
+
+    // // Receive characteristic from server
+    // std::string rxValue4 = pRemoteChar_4->readValue();
+    // // Serial.print("Characteristic 4 (readValue): ");
+    // // Serial.println(rxValue4.c_str());
+  
+    // // // Convert the recieved value to int for the motor input to analogWrite
+    // Mtr4DutyCycle = std::atoi(rxValue4.c_str());
+    // analogWrite(MTR4_OUT, Mtr4DutyCycle);
 
 
     // String txValue = "String with random value from client: " + String(-random(1000));
@@ -198,12 +310,12 @@ void loop() {
     
     // // Set the characteristic's value to be the array of bytes that is actually a string.
     // pRemoteChar_2->writeValue(txValue.c_str(), txValue.length());
-    
+
   }else if(doScan){
     BLEDevice::getScan()->start(0);  // this is just example to start scan after disconnect, most likely there is better way to do it in arduino
   }
 
   // In this example "delay" is used to delay with one second. This is of course a very basic 
   // implementation to keep things simple. I recommend to use millis() for any production code
-  delay(5);
+      delay(5);
 }
