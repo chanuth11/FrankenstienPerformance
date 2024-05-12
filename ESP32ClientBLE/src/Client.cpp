@@ -27,9 +27,7 @@ static boolean doScan = false;
 // Define pointer for the BLE connection
 static BLEAdvertisedDevice* myDevice;
 BLERemoteCharacteristic* pRemoteChar_1;
-BLERemoteCharacteristic* pRemoteChar_2;
-BLERemoteCharacteristic* pRemoteChar_3;
-BLERemoteCharacteristic* pRemoteChar_4;
+
 
 #define MTR1_OUT GPIO_NUM_23
 #define MTR2_OUT GPIO_NUM_22
