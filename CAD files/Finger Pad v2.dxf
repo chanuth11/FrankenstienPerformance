@@ -489,19 +489,19 @@ $SKPOLY
   9
 $TDCREATE
  40
-2460452.009340278
+2460452.613726852
   9
 $TDUCREATE
  40
-2460452.009340278
+2460452.613726852
   9
 $TDUPDATE
  40
-2460452.009340278
+2460452.613726852
   9
 $TDUUPDATE
  40
-2460452.009340278
+2460452.613726852
   9
 $TDINDWG
  40
@@ -549,7 +549,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-A2
+AC
   9
 $SURFTAB1
  70
@@ -929,11 +929,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{844CA75F-B3F6-6047-9681-0E3F178A5AED}
+{DD34DA7C-A9E4-7247-9BA1-E2EEDDFC1A9D}
   9
 $VERSIONGUID
   2
-{8CA6DFE7-07AD-564C-B29C-36F80AB714B7}
+{31849D20-8A08-5A4C-AE5F-409E029E018B}
   9
 $EXTNAMES
 290
@@ -1557,7 +1557,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
  70
      0
  62
@@ -2037,7 +2037,7 @@ POINT
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbPoint
  10
@@ -2055,7 +2055,7 @@ POINT
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbPoint
  10
@@ -2073,7 +2073,7 @@ POINT
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbPoint
  10
@@ -2091,79 +2091,7 @@ LINE
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
-100
-AcDbLine
- 10
--0.75
- 20
--0.9500000000000001
- 30
-0.0
- 11
--0.75
- 21
-3.25
- 31
-0.0
-  0
-LINE
-  5
-7F
-330
-70
-100
-AcDbEntity
-  8
-Finger Pad v2_Sketch1
-100
-AcDbLine
- 10
--0.75
- 20
-3.25
- 30
-0.0
- 11
-0.75
- 21
-3.25
- 31
-0.0
-  0
-LINE
-  5
-80
-330
-70
-100
-AcDbEntity
-  8
-Finger Pad v2_Sketch1
-100
-AcDbLine
- 10
-0.75
- 20
--0.9500000000000001
- 30
-0.0
- 11
-3.249999999999999
- 21
--0.9500000000000001
- 31
-0.0
-  0
-LINE
-  5
-81
-330
-70
-100
-AcDbEntity
-  8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
@@ -2181,13 +2109,85 @@ AcDbLine
   0
 LINE
   5
+7F
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+-0.75
+ 20
+-2.549999999999999
+ 30
+0.0
+ 11
+-0.75
+ 21
+-1.649999999999999
+ 31
+0.0
+  0
+LINE
+  5
+80
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+-3.25
+ 20
+-3.25
+ 30
+0.0
+ 11
+-3.25
+ 21
+-2.549999999999999
+ 31
+0.0
+  0
+LINE
+  5
+81
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+3.249999999999999
+ 20
+-0.9500000000000001
+ 30
+0.0
+ 11
+3.249999999999999
+ 21
+-1.65
+ 31
+0.0
+  0
+LINE
+  5
 82
 330
 70
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
@@ -2211,19 +2211,19 @@ LINE
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
--0.0000000000000004
- 20
 -3.25
+ 20
+-2.549999999999999
  30
 0.0
  11
--0.0750000000000005
+-0.75
  21
--3.25
+-2.549999999999999
  31
 0.0
   0
@@ -2235,19 +2235,19 @@ LINE
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
--3.25
+0.7499999999999996
  20
--3.25
+-2.55
  30
 0.0
  11
--3.25
+3.249999999999999
  21
--2.549999999999999
+-2.55
  31
 0.0
   0
@@ -2259,19 +2259,19 @@ LINE
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
-3.249999999999999
+0.0
  20
--0.9500000000000001
+0.0
  30
 0.0
  11
-3.249999999999999
+-0.75
  21
--1.65
+0.0
  31
 0.0
   0
@@ -2283,19 +2283,19 @@ LINE
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
--3.25
+0.0
  20
--0.9499999999999996
+0.0
  30
 0.0
  11
--3.25
+0.75
  21
--1.649999999999999
+0.0
  31
 0.0
   0
@@ -2307,7 +2307,7 @@ LINE
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
@@ -2331,7 +2331,7 @@ LINE
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
@@ -2355,19 +2355,19 @@ LINE
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
--3.25
+-0.0000000000000004
  20
 -3.25
  30
 0.0
  11
--3.25
+0.2499999999999996
  21
--2.549999999999999
+-3.25
  31
 0.0
   0
@@ -2379,19 +2379,19 @@ LINE
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
-0.75
+0.2499999999999996
  20
--1.65
+-3.25
  30
 0.0
  11
-0.7499999999999996
+0.2499999999999996
  21
--2.55
+-3.0
  31
 0.0
   0
@@ -2403,19 +2403,19 @@ LINE
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
--3.25
+0.2499999999999996
  20
--2.549999999999999
+-3.0
  30
 0.0
  11
--0.75
+0.0500000007450581
  21
--2.549999999999999
+-3.0
  31
 0.0
   0
@@ -2427,19 +2427,19 @@ LINE
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
-0.7499999999999996
+-3.25
  20
--2.55
+-0.9499999999999996
  30
 0.0
  11
-3.249999999999999
+-0.75
  21
--2.55
+-0.9500000000000001
  31
 0.0
   0
@@ -2451,7 +2451,175 @@ LINE
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+0.75
+ 20
+-3.25
+ 30
+0.0
+ 11
+-0.75
+ 21
+-3.25
+ 31
+0.0
+  0
+LINE
+  5
+8E
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+-3.25
+ 20
+-0.9499999999999996
+ 30
+0.0
+ 11
+-3.25
+ 21
+-1.649999999999999
+ 31
+0.0
+  0
+LINE
+  5
+8F
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+-0.0000000000000004
+ 20
+-3.25
+ 30
+0.0
+ 11
+-0.0750000000000005
+ 21
+-3.25
+ 31
+0.0
+  0
+LINE
+  5
+90
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+-0.75
+ 20
+3.25
+ 30
+0.0
+ 11
+0.75
+ 21
+3.25
+ 31
+0.0
+  0
+LINE
+  5
+91
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+0.75
+ 20
+-0.9500000000000001
+ 30
+0.0
+ 11
+3.249999999999999
+ 21
+-0.9500000000000001
+ 31
+0.0
+  0
+LINE
+  5
+92
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+-0.75
+ 20
+-0.9500000000000001
+ 30
+0.0
+ 11
+-0.75
+ 21
+3.25
+ 31
+0.0
+  0
+LINE
+  5
+93
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+0.75
+ 20
+-1.65
+ 30
+0.0
+ 11
+3.249999999999999
+ 21
+-1.65
+ 31
+0.0
+  0
+LINE
+  5
+94
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
@@ -2469,37 +2637,37 @@ AcDbLine
   0
 LINE
   5
-8E
+95
 330
 70
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
--3.25
+0.75
  20
--0.9499999999999996
+-1.65
  30
 0.0
  11
--0.75
+0.7499999999999996
  21
--0.9500000000000001
+-2.55
  31
 0.0
   0
 LINE
   5
-8F
+96
 330
 70
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
@@ -2517,17 +2685,17 @@ AcDbLine
   0
 LINE
   5
-90
+97
 330
 70
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
-3.249999999999999
+-3.25
  20
 -3.25
  30
@@ -2535,103 +2703,175 @@ AcDbLine
  11
 -3.25
  21
--3.25
- 31
-0.0
-  0
-LINE
-  5
-91
-330
-70
-100
-AcDbEntity
-  8
-Finger Pad v2_Sketch1
-100
-AcDbLine
- 10
--3.25
- 20
--1.649999999999999
- 30
-0.0
- 11
--3.25
- 21
--0.9499999999999996
- 31
-0.0
-  0
-LINE
-  5
-92
-330
-70
-100
-AcDbEntity
-  8
-Finger Pad v2_Sketch1
-100
-AcDbLine
- 10
--0.75
- 20
 -2.549999999999999
- 30
-0.0
- 11
--0.75
- 21
--1.649999999999999
  31
 0.0
   0
 LINE
   5
-93
+98
 330
 70
 100
 AcDbEntity
   8
-Finger Pad v2_Sketch1
+Finger Pad v4_Sketch1
 100
 AcDbLine
  10
-0.75
- 20
--3.25
- 30
-0.0
- 11
--0.75
- 21
--3.25
- 31
-0.0
-  0
-LINE
-  5
-94
-330
-70
-100
-AcDbEntity
-  8
-Finger Pad v2_Sketch1
-100
-AcDbLine
- 10
-0.75
- 20
--1.65
- 30
-0.0
- 11
 3.249999999999999
+ 20
+-3.25
+ 30
+0.0
+ 11
+-3.25
  21
--1.65
+-3.25
+ 31
+0.0
+  0
+LINE
+  5
+99
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+-3.25
+ 20
+-1.649999999999999
+ 30
+0.0
+ 11
+-3.25
+ 21
+-0.9499999999999996
+ 31
+0.0
+  0
+LINE
+  5
+9A
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+-0.0500000000000005
+ 20
+-3.0
+ 30
+0.0
+ 11
+-0.0500000000000005
+ 21
+-3.25000047944836
+ 31
+0.0
+  0
+LINE
+  5
+9B
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+-0.2500000000000004
+ 20
+-3.0
+ 30
+0.0
+ 11
+-0.0500000000000004
+ 21
+-3.0
+ 31
+0.0
+  0
+LINE
+  5
+9C
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+-0.2500000000000004
+ 20
+-3.25
+ 30
+0.0
+ 11
+-0.2500000000000004
+ 21
+-3.0
+ 31
+0.0
+  0
+LINE
+  5
+9D
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+0.0500000007450581
+ 20
+-3.0
+ 30
+0.0
+ 11
+0.0500000007450581
+ 21
+-3.250000048428773
+ 31
+0.0
+  0
+LINE
+  5
+9E
+330
+70
+100
+AcDbEntity
+  8
+Finger Pad v4_Sketch1
+100
+AcDbLine
+ 10
+-0.0000000000000004
+ 20
+-3.25
+ 30
+0.0
+ 11
+-0.2500000000000004
+ 21
+-3.25
  31
 0.0
   0
@@ -2705,11 +2945,11 @@ ACAD_VISUALSTYLE
   3
 ACDB_RECOMPOSE_DATA
 350
-9D
+A7
   3
 AcDbVariableDictionary
 350
-95
+9F
   0
 DICTIONARY
   5
@@ -3137,7 +3377,7 @@ X-Ray
   0
 XRECORD
   5
-9D
+A7
 102
 {ACAD_REACTORS
 330
@@ -3157,7 +3397,7 @@ AcDbXrecord
   0
 DICTIONARY
   5
-95
+9F
 102
 {ACAD_REACTORS
 330
@@ -3173,23 +3413,23 @@ AcDbDictionary
   3
 CANNOSCALE
 350
-9A
+A4
   3
 CMLEADERSTYLE
 350
-97
+A1
   3
 CTABLESTYLE
 350
-96
+A0
   3
 CVIEWDETAILSTYLE
 350
-98
+A2
   3
 CVIEWSECTIONSTYLE
 350
-99
+A3
   0
 ACDBDETAILVIEWSTYLE
   5
@@ -3197,7 +3437,7 @@ ACDBDETAILVIEWSTYLE
 102
 {ACAD_XDICTIONARY
 360
-A0
+AA
 102
 }
 102
@@ -4921,7 +5161,7 @@ ACDBSECTIONVIEWSTYLE
 102
 {ACAD_XDICTIONARY
 360
-9E
+A8
 102
 }
 102
@@ -5047,7 +5287,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-9B
+A5
 102
 }
 102
@@ -11677,15 +11917,15 @@ AcDbSavedByObjectVersion
   0
 DICTIONARYVAR
   5
-9A
+A4
 102
 {ACAD_REACTORS
 330
-95
+9F
 102
 }
 330
-95
+9F
 100
 DictionaryVariables
 280
@@ -11695,15 +11935,15 @@ DictionaryVariables
   0
 DICTIONARYVAR
   5
-97
+A1
 102
 {ACAD_REACTORS
 330
-95
+9F
 102
 }
 330
-95
+9F
 100
 DictionaryVariables
 280
@@ -11713,15 +11953,15 @@ STANDARD
   0
 DICTIONARYVAR
   5
-96
+A0
 102
 {ACAD_REACTORS
 330
-95
+9F
 102
 }
 330
-95
+9F
 100
 DictionaryVariables
 280
@@ -11731,15 +11971,15 @@ STANDARD
   0
 DICTIONARYVAR
   5
-98
+A2
 102
 {ACAD_REACTORS
 330
-95
+9F
 102
 }
 330
-95
+9F
 100
 DictionaryVariables
 280
@@ -11749,15 +11989,15 @@ Imperial24
   0
 DICTIONARYVAR
   5
-99
+A3
 102
 {ACAD_REACTORS
 330
-95
+9F
 102
 }
 330
-95
+9F
 100
 DictionaryVariables
 280
@@ -11767,7 +12007,7 @@ Imperial24
   0
 DICTIONARY
   5
-A0
+AA
 330
 6B
 100
@@ -11779,7 +12019,7 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-A1
+AB
   0
 DICTIONARY
   5
@@ -11891,7 +12131,7 @@ SPECULARTILE
   0
 DICTIONARY
   5
-9E
+A8
 330
 69
 100
@@ -11903,11 +12143,11 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
-9F
+A9
   0
 DICTIONARY
   5
-9B
+A5
 330
 65
 100
@@ -11919,19 +12159,19 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-9C
+A6
   0
 XRECORD
   5
-A1
+AB
 102
 {ACAD_REACTORS
 330
-A0
+AA
 102
 }
 330
-A0
+AA
 100
 AcDbXrecord
 280
@@ -12307,15 +12547,15 @@ AcDbXrecord
   0
 XRECORD
   5
-9F
+A9
 102
 {ACAD_REACTORS
 330
-9E
+A8
 102
 }
 330
-9E
+A8
 100
 AcDbXrecord
 280
@@ -12331,15 +12571,15 @@ FLAGS
   0
 CELLSTYLEMAP
   5
-9C
+A6
 102
 {ACAD_REACTORS
 330
-9B
+A5
 102
 }
 330
-9B
+A5
 100
 AcDbCellStyleMap
  90
