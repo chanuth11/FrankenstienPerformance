@@ -34,7 +34,7 @@ uint32_t value = 0;
 #define SERVICE_UUID          "4fafc201-1fb5-459e-8fcc-c5c9c331914b"
 #define CHARACTERISTIC_UUID_1 "beb5483e-36e1-4688-b7f5-ea07361b26a8"
 
-#define FSR1_IN GPIO_NUM_36
+#define FSR1_IN GPIO_NUM_27
 #define FSR2_IN GPIO_NUM_39
 #define FSR3_IN GPIO_NUM_34
 #define FSR4_IN GPIO_NUM_35
