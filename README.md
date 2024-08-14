@@ -3,3 +3,7 @@ Frankenstien Performance in a simple way is to add vibrato to a pianist, not by 
 The overarching idea behind Frankenstien Performance is to wirelessly communicate human thoughtfulness using sensory experiences.   
 
 **Still in early developments**
+
+The current progress can be found in this google photo album and this hackaday post. 
+Photo Album: https://photos.app.goo.gl/TBx9K2HFpNhXGP73A
+Hackaday Post: *in process of making*
