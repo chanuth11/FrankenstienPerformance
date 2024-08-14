@@ -5,5 +5,5 @@ The overarching idea behind Frankenstien Performance is to wirelessly communicat
 **Still in early developments**
 
 The current progress can be found in this google photo album and this hackaday post. 
-Photo Album: https://photos.app.goo.gl/TBx9K2HFpNhXGP73A
+Photo Album: https://photos.app.goo.gl/TBx9K2HFpNhXGP73A                                                                                                                        
 Hackaday Post: *in process of making*
