@@ -11,5 +11,4 @@ First demo of the idea can be found here:
 [Link](https://photos.app.goo.gl/4rt2y4wctnXFHKrz7)
 
 The current progress can be found in this google photo album 
-Photo Album: [Link](https://photos.app.goo.gl/TBx9K2HFpNhXGP73A)                                                                                                          
-The overarching idea behind Frankenstien Performance is to wirelessly communicate human thoughtfulness using sensory experiences.   
+Photo Album: [Link](https://photos.app.goo.gl/TBx9K2HFpNhXGP73A)                                                                
