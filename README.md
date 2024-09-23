@@ -2,7 +2,7 @@ Frankenstien Performance in a simple way is to add vibrato to a pianist, not by 
 
 Project Overview: https://docs.google.com/document/d/1Czj3p9xsU4ySwSgOzsWXNFMIXikh_KkIHCT7q2ypQqQ/edit?usp=sharing
 
-More Detailed Project Overview: https://drive.google.com/file/d/1W3QMKeLhWS7s6yfx7D7PqbB7X5Rkl9aM/view?usp=sharing
+More Detailed Project Overview: https://drive.google.com/file/d/1qhM1vxCRss-svb0F6b9Xi3fvnZIC1QcL/view?usp=sharing
 
 ## Initial Prototype
 ![image](https://github.com/user-attachments/assets/ab7e6abf-b028-413c-abba-9a477d8c3d71)
